@@ -1,4 +1,13 @@
 {
     "name": "Ubuntu",
-    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04"
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
+
+    "features": {
+        "ghcr.io/devcontainers/features/nvidia-cuda:1": {
+            "installNvtx": true,
+            "installToolkit": true,
+            "cudaVersion": "12.2"
+        }
+    }
+
 }
